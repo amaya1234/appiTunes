@@ -1,0 +1,8 @@
+{
+  "name": "appitunes",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

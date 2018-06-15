@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Itunes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <input type="text" [(ngModel)]="busqueda_usuario">
+  <button ion-button blockground (click)="buscar()" >Encontrar</button>
+  <div showWhen ="android, ios">
+    Estamos con un Móvil
+  </div>
+
+  <button ion-button icon-only (click)="consulta()">
+      <ion-icon name="search"></ion-icon>
+  </button>
+
+  <div *ngIf="cargado">
+    <div *ngFor="let cancion of array_canciones">
+      {{cancion.artistName}}-{{cancion.trackName}}
+    </div>
+  </div>
+  
+</ion-content>
