@@ -47,7 +47,8 @@ export class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Itunes', component: IonicComponent }
+      { title: 'Itunes', component: IonicComponent },
+      { title: 'mapaweb' , component: Geolocation}
     ];
   }
 
